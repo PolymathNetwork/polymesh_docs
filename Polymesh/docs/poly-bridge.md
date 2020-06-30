@@ -18,7 +18,7 @@ Any POLY holder can lock their POLY. The smart contract only locks POLY and reje
 
 The user provides their Polymesh address when locking POLY, however the contract does not check the validity of that address. The user must sign their POLY lock request with their Polymesh account private key, which ensures that they control that Polymesh account because that signature can be verified against the public key of the Polymesh account. Once the POLY is locked, the contract emits an event with the locked amount, the destination Mesh address and the lock transaction hash.
 
-The contract allows meta-transactions so that third parties such as exchanges can act on users' behalf. Lastly, the smart contract is upgradable based on a time-lock.
+The contract allows meta-transactions so that third parties such as exchanges can act on users' behalf. Lastly, the smart contract is upgradable.
 
 #### Relayer Middleware
 
