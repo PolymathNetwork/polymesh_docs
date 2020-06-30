@@ -2,7 +2,7 @@
 
 ## Overview
 
-The bridge lets holders of Ethereum POLY tokens carry those tokens over to our brand new Polymesh chain. Since the Polymath team committed to building a securities blockchain on Substrate, development has shifted focus away from Ethereum.
+Since the Polymath team committed to building a securities blockchain on Substrate, development has shifted focus away from Ethereum. To support existing and future Poly holders, the team has created the bridge. At the time of writing the bridge lets holders of Kovan POLY tokens carry those tokens over to our brand new Aldebaran testnet. When the Polymesh mainnet launches, it is going to be bridged with the Ethereum mainnet.
 
 Carrying the tokens over follows the standard *lock and mint* process. First, Ethereum tokens are locked indefinitely by the Ethereum smart contract. Then, native tokens are minted on the Polymesh side.
 
@@ -14,9 +14,9 @@ The bridge is a distributed system made up of the Ethereum smart contract, off-c
 
 #### Ethereum Side
 
-Any POLY holder can lock their POLY. The smart contract only locks POLY and rejects any other tokens. In order to be locked, the amount must be greater than 0. There is no maximum on how much POLY can be locked. Locked POLY stays locked forever and no-one can unlock it. The granularity for locked POLY is restricted to that of the Polymesh chain, that is, 6 digits after the decimal period.
+Any POLY holder can lock their POLY. The smart contract only locks POLY and rejects any other tokens. In order to be locked, the amount must be greater than 1 POLY. There is no maximum on how much POLY can be locked. Locked POLY stays locked forever and no-one can unlock it. The granularity for locked POLY is restricted to that of the Polymesh chain, that is, 6 digits after the decimal period.
 
-The user provides their Polymesh address when locking POLY, however the contract does not check the validity of that address. The user must sign their POLY lock request with their Polymesh account private key, which ensures that they control that Polymesh account because that signature can be verified against the public key of the Polymesh account. Once the POLY is locked, the contract emits an event with the locked amount, the destination Mesh address and the timestamp.
+The user provides their Polymesh address when locking POLY, however the contract does not check the validity of that address. The user must sign their POLY lock request with their Polymesh account private key, which ensures that they control that Polymesh account because that signature can be verified against the public key of the Polymesh account. Once the POLY is locked, the contract emits an event with the locked amount, the destination Mesh address and the lock transaction hash.
 
 The contract allows meta-transactions so that third parties such as exchanges can act on users' behalf. Lastly, the smart contract is upgradable based on a time-lock.
 
@@ -34,7 +34,7 @@ Minting of POLYX tokens is implemented in the Polymesh runtime, in the bridge pa
 
 Relayers are members of the bridge multisig account owned by the *bridge controller*. On the testnet, the number of relayers at genesis is 5. To start handling a transaction -- that is to change its status from absent -- at least 3 out of 5 relayers have to propose that same transaction.
 
-Even though there is no maximum limit of how much POLY can be bridged, the Polymesh side limits how much POLY is bridged per unit of time on the testnet.
+Even though there is no maximum limit of how much POLY can be bridged, the Aldebaran testnet side sets a limit on how much POLY is bridged per unit of time. There is going to be no such a limit on the mainnet.
 
 ### Cluster
 
