@@ -1,0 +1,46 @@
+site_name: Polymesh
+nav:
+    - Aldebaran Network: 
+      - Running A Node: about.md
+      - dApps: about.md
+    - POLYX:
+      - Transaction Fees: about.md
+      - Protocol Fees: about.md
+      - Identity and Key Balances: about.md
+      - POLY to POLYX Bridge: about.md
+    - Identity:
+      - Key Management: about.md
+      - Access Control: about.md
+      - Multisig: about.md
+    - Confidential Identity:
+      - CDD Process: about.md
+      - Scope Labels: about.md
+    - Assets:
+      - Asset Lifecycle: about.md
+      - Issuance / Redemption: about.md
+      - Portfolios: about.md
+    - Compliance:
+      - Claims: about.md
+      - Compliance Rules: about.md
+    - Settlement:
+      - Venues, Instructions and Legs: about.md
+      - Settlement Engine: about.md
+    - Corporate Actions:
+      - Funding: about.md
+      - Dividends: about.md
+      - Ballots: about.md
+    - Governance:
+      - Polymesh Improvement Proposals: about.md
+      - Token Holder Proposals: about.md
+      - Committees: about.md
+      - Network Reserve: about.md
+    - Smart Extensions:
+      - Managing and Deploying Extensions: about.md
+      - Count Transfer Manager: about.md
+      - Percentage Transfer Manager: about.md
+    - Consensus:
+      - Permissioned Operators: about.md
+      - Staking: about.md
+      - Rewards / Fines: about.md
+
+theme: readthedocs
