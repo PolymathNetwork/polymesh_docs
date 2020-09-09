@@ -1,4 +1,14 @@
+# Project information
 site_name: Polymesh
+site_url: https://docs.polymesh.live
+site_description: >-
+  Documentation for Polymesh
+
+# Repository
+repo_name: PolymathNetwork/Polymesh
+repo_url: https://github.com/PolymathNetwork/polymesh
+edit_uri: ""
+
 nav:
     - Aldebaran Network: 
       - Running A Node: about.md
@@ -12,7 +22,6 @@ nav:
       - Key Management: about.md
       - Access Control: about.md
       - Multisig: about.md
-    - Confidential Identity:
       - CDD Process: about.md
       - Scope Labels: about.md
     - Assets:
@@ -22,6 +31,8 @@ nav:
     - Compliance:
       - Claims: about.md
       - Compliance Rules: about.md
+    - Custody:
+      - Custodians: about.md      
     - Settlement:
       - Venues, Instructions and Legs: about.md
       - Settlement Engine: about.md
@@ -43,4 +54,24 @@ nav:
       - Staking: about.md
       - Rewards / Fines: about.md
 
-theme: readthedocs
+theme:
+  name: material
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  #features:
+    #- tabs
+    #- instant
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
