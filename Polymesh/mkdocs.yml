@@ -1,6 +1,6 @@
 # Project information
 site_name: Polymesh
-site_url: https://docs.polymesh.live
+site_url: https://developer.polymesh.live
 site_description: >-
   Documentation for Polymesh
 
@@ -10,49 +10,58 @@ repo_url: https://github.com/PolymathNetwork/polymesh
 edit_uri: ""
 
 nav:
-    - Aldebaran Network: 
-      - Running A Node: about.md
-      - dApps: about.md
+    - Polymesh Overview:
+      - Architecture: architecture.md
+      - Timeline: timeline.md
+      - Technology: technology.md
+    - Alcyone Public Testnet: 
+      - Running A Node: node.md
+      - dApps: dapps.md
     - POLYX:
-      - Transaction Fees: about.md
-      - Protocol Fees: about.md
-      - Identity and Key Balances: about.md
-      - POLY to POLYX Bridge: poly-bridge.md
+      - Transaction Fees: transaction_fees.md
+      - Protocol Fees: protocol_fees.md
+      - POLY to POLYX Bridge: poly_bridge.md
+      - Treasury: treasury.md
     - Identity:
-      - Key Management: about.md
-      - Access Control: about.md
-      - Multisig: about.md
-      - CDD Process: about.md
-      - Scope Labels: about.md
+      - Key Management: key_management.md
+      - Permissions: permissions.md
+      - Multisig: multisig.md
+      - CDD Process: cdd.md
+      - Portfolios: portfolios.md
+    - Confidential Identity:
+      - Overview: ci_overview.md
+      - Entities and Identities: entities.md
+      - Identities and Assets: scope_labels.md
+    - Authorisations:
+      - Overview: auth_overview.md
     - Assets:
-      - Asset Lifecycle: about.md
-      - Issuance / Redemption: about.md
-      - Portfolios: about.md
+      - Overview: assets.md
+      - Issuance: issuance.md
     - Compliance:
-      - Claims: about.md
-      - Compliance Rules: about.md
-    - Custody:
-      - Custodians: about.md      
+      - Claims: claims.md
+      - Compliance Rules: rules.md
     - Settlement:
-      - Venues, Instructions and Legs: about.md
-      - Settlement Engine: about.md
+      - Venues, Instructions and Legs: settlement.md
+      - Settlement Engine: settlement_engine.md
+      - Security Token Offerings: stos.md
     - Corporate Actions:
-      - Funding: about.md
-      - Dividends: about.md
-      - Ballots: about.md
+      - Overview: ca_overview.md
+      - Capital Distributions: cap_distribution.md
+      - Corporate Ballots: ballots.md
     - Governance:
-      - Polymesh Improvement Proposals: about.md
-      - Token Holder Proposals: about.md
-      - Committees: about.md
-      - Network Reserve: about.md
+      - Overview: gov_overview.md
+      - Polymesh Improvement Proposals: pips.md
+      - Signalling: signalling.md
+      - Committees: committees.md
+      - Governance Council: gov_council.md
     - Smart Extensions:
-      - Managing and Deploying Extensions: about.md
-      - Count Transfer Manager: about.md
-      - Percentage Transfer Manager: about.md
+      - Managing and Deploying Extensions: smart_extensions.md
+      - Count Transfer Manager: ctm.md
+      - Percentage Transfer Manager: ptm.md
     - Consensus:
-      - Permissioned Operators: about.md
-      - Staking: about.md
-      - Rewards / Fines: about.md
+      - Permissioned Operators: operators.md
+      - Staking: staking.md
+      - Rewards / Fines: tokenomics.md
 
 theme:
   name: material
