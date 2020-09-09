@@ -1,0 +1,10 @@
+# Mac files
+.DS_Store
+
+# Emacs backups
+\#*#
+.#*
+*~
+
+# Vim backups
+.*.sw[po]
