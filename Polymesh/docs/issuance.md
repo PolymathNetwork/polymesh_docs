@@ -16,16 +16,18 @@ The asset issuer can set the primary issuance agent for their asset to any other
 
 Once an asset issuer has created and configured their asset, they can then issue tokens representing ownership in the asset to the primary issuance agent.
 
-The primary issuance agent can then distribute those asset tokens to investors directly or via an security token offering, using the settlement engine.
+The primary issuance agent can then distribute those asset tokens to investors directly or via an security token offering, in both cases using the settlement engine.
 
+This approach allows a clean separation between the issuance process, which bypasses both the compliance and settlement engine and is restricted to only issuance to the configured primary issuance agent, and the distribution process which uses both the compliance and settlement engines.
+
+For more details on how the distribution process works seamlessly with the settlement engine, please see:  
 [TODO] link to distribution section of Settlement
+
+# Diagram
 
 1. register ticker (asset issuer)
 2. create asset (asset issuer)
 3. issue asset to PIA (asset issuer)
 4. distribute asset from PIA to investors (PIA)
 
-# Diagram
-
 ...
-
