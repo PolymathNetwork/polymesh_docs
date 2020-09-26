@@ -14,9 +14,13 @@ Polymesh is built on the Substrate framework.
 
 POLYX
 
+## Architecture Diagram
+
 ![Architecture Diagram](images/Polymesh Architecture.png)
 
-## Identity
+## Pillars
+
+### Identity
 
 Identity is at the core of Polymesh. Polymesh implements a federated root of trust via permissioned Customer Due Diligence service providers. Every transaction in Polymesh is associated with an identity.
 
@@ -24,7 +28,16 @@ Identities in Polymesh are controlled via keys - each identity must have a singl
 
 Identities are a collection of keys, claims and assets.
 
-Provides pseudo-anonymous identity and key management. All users must act through an on-chain identity when interacting with Polymesh (with the exception of POLY transfers and the registration of new identities). Identities will be referenced through DIDs, following the w3c specification.## Asset
+Provides pseudo-anonymous identity and key management. All users must act through an on-chain identity when interacting with Polymesh (with the exception of POLY transfers and the registration of new identities). Identities will be referenced through DIDs, following the w3c specification.
+
+### Governance
+
+### Confidentiality
+
+### Compliance
+
+
+## Asset
 
 Allows users to issue, manage and transfer tokenised assets with regulatory compliance enforced on-chain. 
 
