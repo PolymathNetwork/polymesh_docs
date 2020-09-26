@@ -39,37 +39,11 @@ Even though there is no maximum limit of how much POLY can be bridged, the Aldeb
 ### Cluster
 
 The bridge is a set of *bridge clusters*. Each of those clusters contains the following components:
+
 * a public Internet-facing Ethereum node,
+
 * a public Internet-facing, non-validating Polymesh node,
+
 * a private relayer node behind a private connection to the Ethereum and Polymesh nodes,
+
 * a private signer privately connected to the relayer.
-
-## UI Walkthrough
-
-Polymath has created a comprehensive state-of-the-art and easy to use [bridge UI](https://polybridge.polymesh.live/).
-
-![](https://i.imgur.com/Ic5lw94.png)
-
-connect with your Metamask account:
-
-![](https://i.imgur.com/5w1O80f.png)
-
-enter the recipient POLYX account:
-
-![](https://i.imgur.com/V5QsHPU.png)
-
-The UI detects whether the recipient account is linked with an identity. If it isn't, a new identity can be created:
-
-![](https://i.imgur.com/QhT7Azb.png)
-
-Just follow the verification prompts and you should get a successful identity verification:
-
-![](https://i.imgur.com/7y2EEsv.png)
-
-After that bridging POLY is straightforward -- simply tell the UI how much should be bridged:
-
-![](https://i.imgur.com/L2PzsLl.png)
-
-Hit "Confirm" and -- while the timelock is on -- grab a cup of tea or have a look at other Polymath products like the [Token Studio](https://tokenstudio.polymesh.live/).
-
-**Happy POLY bridging!**
