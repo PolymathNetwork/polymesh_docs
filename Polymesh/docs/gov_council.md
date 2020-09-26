@@ -15,3 +15,9 @@ The Governance Concil can be thought of as a multisig controlled by its members,
 These non-PIP actions include managing the membership of the Governance Council itself, with existing members needing to agree and vote on the addition or removal of members, as well as changes to the voting structure, for example the voting threshold.
 
 The Goverance Council is also able to issue a Customer Due Diligence claim (TODO: add link) should the need arise.
+
+## Release Coordinator
+
+One member of the Governance Council is elected as the Release Coordinator. The role of the Release Coordinator is to schedule PIPs that have been ratified by the Governance Council.
+
+Every ratified PIP has a default execution time, set as a specific amount of blocks from the time it was ratified. The Release Coordinator can re-schedule any PIP to a different execution block or choose to enact it immediately. This provides flexibility to coordinate the release of critical fixes, and ensure that any stakeholders in a particular PIP are coordinated and well prepared before the PIP is executed.

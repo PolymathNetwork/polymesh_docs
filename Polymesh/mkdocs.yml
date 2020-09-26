@@ -18,6 +18,7 @@ nav:
       - Running A Node: node.md
       - dApps: dapps.md
     - POLYX:
+      - POLYX Overview: polyx_overview.md      
       - Transaction Fees: transaction_fees.md
       - Protocol Fees: protocol_fees.md
       - POLY to POLYX Bridge: poly_bridge.md
