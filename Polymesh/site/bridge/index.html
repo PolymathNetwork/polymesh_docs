@@ -1,0 +1,1018 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Polymesh">
+      
+      
+        <link rel="canonical" href="https://developer.polymesh.live/bridge/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>POLY to POLYX Bridge - Polymesh Developers Portal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ethereum-poly-to-polymesh-bridge" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://developer.polymesh.live" title="Polymesh Developers Portal" class="md-header-nav__button md-logo" aria-label="Polymesh Developers Portal">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Polymesh Developers Portal
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              POLY to POLYX Bridge
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/PolymathNetwork/polymesh" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    PolymathNetwork/Polymesh
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://developer.polymesh.live" title="Polymesh Developers Portal" class="md-nav__button md-logo" aria-label="Polymesh Developers Portal">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    Polymesh Developers Portal
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/PolymathNetwork/polymesh" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    PolymathNetwork/Polymesh
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../defi/" title="DeFi" class="md-nav__link">
+      DeFi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../testnet/" title="Alcyone Public Testnet" class="md-nav__link">
+      Alcyone Public Testnet
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Polymesh Primitives
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Polymesh Primitives" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Polymesh Primitives
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../identity/" title="Identity" class="md-nav__link">
+      Identity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cdd/" title="Customer Due Diligence" class="md-nav__link">
+      Customer Due Diligence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../confidential_identity/" title="Confidential Identity" class="md-nav__link">
+      Confidential Identity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../authorisations/" title="Authorisations" class="md-nav__link">
+      Authorisations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assets/" title="Assets" class="md-nav__link">
+      Assets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../portfolios_custody/" title="Portfolios and Custody" class="md-nav__link">
+      Portfolios and Custody
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../compliance/" title="Compliance" class="md-nav__link">
+      Compliance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settlement/" title="Settlement" class="md-nav__link">
+      Settlement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../corporate_actions/" title="Corporate Actions" class="md-nav__link">
+      Corporate Actions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../smart_extensions/" title="Smart Extensions" class="md-nav__link">
+      Smart Extensions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Polymesh Network
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Polymesh Network" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Polymesh Network
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../polyx/" title="POLYX Token" class="md-nav__link">
+      POLYX Token
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        POLY to POLYX Bridge
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="POLY to POLYX Bridge" class="md-nav__link md-nav__link--active">
+      POLY to POLYX Bridge
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ethereum-poly-to-polymesh-bridge" class="md-nav__link">
+    Ethereum POLY to Polymesh Bridge
+  </a>
+  
+    <nav class="md-nav" aria-label="Ethereum POLY to Polymesh Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridge-architecture" class="md-nav__link">
+    Bridge Architecture
+  </a>
+  
+    <nav class="md-nav" aria-label="Bridge Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    Software
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethereum-side" class="md-nav__link">
+    Ethereum Side
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relayer-middleware" class="md-nav__link">
+    Relayer Middleware
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymesh-side" class="md-nav__link">
+    Polymesh Side
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    Cluster
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-walkthrough" class="md-nav__link">
+    UI Walkthrough
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fees/" title="Fees" class="md-nav__link">
+      Fees
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../permissioned_roles/" title="Permissioned Roles" class="md-nav__link">
+      Permissioned Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../governance/" title="Governance" class="md-nav__link">
+      Governance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tokenomics/" title="Tokenomics" class="md-nav__link">
+      Tokenomics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../consensus/" title="Consensus" class="md-nav__link">
+      Consensus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Contribute
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Contribute" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Contribute
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grants/" title="Grants" class="md-nav__link">
+      Grants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bug_bounty/" title="Bug Bounty" class="md-nav__link">
+      Bug Bounty
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Future Development
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Future Development" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Future Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../confidential_assets/" title="Confidential Assets" class="md-nav__link">
+      Confidential Assets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../smart_contracts/" title="Smart Contracts" class="md-nav__link">
+      Smart Contracts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../statistics/" title="Statistics Engine" class="md-nav__link">
+      Statistics Engine
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" title="External Resources" class="md-nav__link">
+      External Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ethereum-poly-to-polymesh-bridge" class="md-nav__link">
+    Ethereum POLY to Polymesh Bridge
+  </a>
+  
+    <nav class="md-nav" aria-label="Ethereum POLY to Polymesh Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridge-architecture" class="md-nav__link">
+    Bridge Architecture
+  </a>
+  
+    <nav class="md-nav" aria-label="Bridge Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    Software
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethereum-side" class="md-nav__link">
+    Ethereum Side
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relayer-middleware" class="md-nav__link">
+    Relayer Middleware
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymesh-side" class="md-nav__link">
+    Polymesh Side
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    Cluster
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-walkthrough" class="md-nav__link">
+    UI Walkthrough
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                  <h1>POLY to POLYX Bridge</h1>
+                
+                <h2 id="ethereum-poly-to-polymesh-bridge">Ethereum POLY to Polymesh Bridge</h2>
+<h3 id="overview">Overview</h3>
+<p>Since the Polymath team committed to building a securities blockchain on Substrate, development has shifted focus away from Ethereum. To support existing and future Poly holders, the team has created the bridge. At the time of writing the bridge lets holders of Kovan POLY tokens carry those tokens over to our brand new Aldebaran testnet. When the Polymesh mainnet launches, it is going to be bridged with the Ethereum mainnet.</p>
+<p>Carrying the tokens over follows the standard <em>lock and mint</em> process. First, Ethereum tokens are locked indefinitely by the Ethereum smart contract. Then, native tokens are minted on the Polymesh side.</p>
+<h3 id="bridge-architecture">Bridge Architecture</h3>
+<h4 id="software">Software</h4>
+<p>The bridge is a distributed system made up of the Ethereum smart contract, off-chain relay middleware and a dedicated Polymesh runtime module aka <a href="https://docs.polymesh.live/polymesh_runtime_common/bridge/index.html"><em>bridge pallet</em></a>.</p>
+<h4 id="ethereum-side">Ethereum Side</h4>
+<p>Any POLY holder can lock their POLY. The smart contract only locks POLY and rejects any other tokens. In order to be locked, the amount must be greater than 1 POLY. There is no maximum on how much POLY can be locked. Locked POLY stays locked forever and no-one can unlock it. The granularity for locked POLY is restricted to that of the Polymesh chain, that is, 6 digits after the decimal period.</p>
+<p>The user provides their Polymesh address when locking POLY, however the contract does not check the validity of that address. The user must sign their POLY lock request with their Polymesh account private key, which ensures that they control that Polymesh account because that signature can be verified against the public key of the Polymesh account. Once the POLY is locked, the contract emits an event with the locked amount, the destination Mesh address and the lock transaction hash.</p>
+<p>The contract allows meta-transactions so that third parties such as exchanges can act on users' behalf. Lastly, the smart contract is upgradable.</p>
+<h4 id="relayer-middleware">Relayer Middleware</h4>
+<p>Lock events emitted by the Ethereum POLY locker contract are listened to by <em>relayer</em> processes and verified by a sufficient amount of block confirmations. Each relayer process extracts Ethereum lock transactions from the received events and requests a connected <em>signer</em> process to sign those transactions before proposing thus signed transactions to the on-chain Polymesh bridge multisig, more details below.</p>
+<p>Each signer has a Polymesh address which is registered in the bridge multisig wallet. This way the signers act as multisig voters. However the signers' role is only to passively sign the incoming transactions. It is the responsibility of the relayers to submit the signers' votes to the Polymesh chain.</p>
+<h4 id="polymesh-side">Polymesh Side</h4>
+<p>Minting of POLYX tokens is implemented in the Polymesh runtime, in the bridge pallet. Below is the state machine diagram for the lifecycle of a bridge transaction arriving at Polymesh from the bridge relayers. There are 5 states: absent, timelocked, pending, handled and frozen. Any successful transaction makes its way from absent (start) to handled (end). The solid arrows correspond to automated transitions according to the business logic. The dashed arrows correspond to manual actions of the bridge administrator. The administrator has the ability to freeze a transaction that is still in progress. This is however an exceptional measure only to allow for the human to stay in the loop. It is supposed to be exercised only in extreme cases.</p>
+<p><img alt="" src="https://i.imgur.com/i7tSqI0.png" /></p>
+<p>Relayers are members of the bridge multisig account owned by the <em>bridge controller</em>. On the testnet, the number of relayers at genesis is 5. To start handling a transaction -- that is to change its status from absent -- at least 3 out of 5 relayers have to propose that same transaction.</p>
+<p>Even though there is no maximum limit of how much POLY can be bridged, the Aldebaran testnet side sets a limit on how much POLY is bridged per unit of time. There is going to be no such a limit on the mainnet.</p>
+<h3 id="cluster">Cluster</h3>
+<p>The bridge is a set of <em>bridge clusters</em>. Each of those clusters contains the following components:
+* a public Internet-facing Ethereum node,
+* a public Internet-facing, non-validating Polymesh node,
+* a private relayer node behind a private connection to the Ethereum and Polymesh nodes,
+* a private signer privately connected to the relayer.</p>
+<h2 id="ui-walkthrough">UI Walkthrough</h2>
+<p>Polymath has created a comprehensive state-of-the-art and easy to use <a href="https://polybridge.polymesh.live/">bridge UI</a>.</p>
+<p><img alt="" src="https://i.imgur.com/Ic5lw94.png" /></p>
+<p>connect with your Metamask account:</p>
+<p><img alt="" src="https://i.imgur.com/5w1O80f.png" /></p>
+<p>enter the recipient POLYX account:</p>
+<p><img alt="" src="https://i.imgur.com/V5QsHPU.png" /></p>
+<p>The UI detects whether the recipient account is linked with an identity. If it isn't, a new identity can be created:</p>
+<p><img alt="" src="https://i.imgur.com/QhT7Azb.png" /></p>
+<p>Just follow the verification prompts and you should get a successful identity verification:</p>
+<p><img alt="" src="https://i.imgur.com/7y2EEsv.png" /></p>
+<p>After that bridging POLY is straightforward -- simply tell the UI how much should be bridged:</p>
+<p><img alt="" src="https://i.imgur.com/L2PzsLl.png" /></p>
+<p>Hit "Confirm" and -- while the timelock is on -- grab a cup of tea or have a look at other Polymath products like the <a href="https://tokenstudio.polymesh.live/">Token Studio</a>.</p>
+<p><strong>Happy POLY bridging!</strong></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../polyx/" title="POLYX Token" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                POLYX Token
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../fees/" title="Fees" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Fees
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

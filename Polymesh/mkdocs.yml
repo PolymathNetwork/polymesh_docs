@@ -39,7 +39,7 @@ nav:
     - Future Development:
       - Confidential Assets: confidential_assets.md
       - Smart Contracts: smart_contracts.md
-      - Asset Statistics: statistics.md
+      - Statistics Engine: statistics.md
     - External Resources: resources.md
     - Glossary: glossary.md
 
