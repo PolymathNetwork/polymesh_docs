@@ -36,7 +36,6 @@ nav:
     - Contribute:
       - Grants: grants.md
       - Bug Bounty: bug_bounty.md
-      - Alcyone Testnet: testnet.md
     - Future Development:
       - Confidential Assets: confidential_assets.md
       - Smart Contracts: smart_contracts.md
