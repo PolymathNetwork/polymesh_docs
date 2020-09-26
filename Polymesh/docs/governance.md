@@ -13,6 +13,8 @@ The governance system consists of POLYX token holders populating and curating a 
 
 In addition to the Governance Council there are other committees (e.g. Technical Committee) that can submit PIPs directly to the Governance Council for review, bypassing the community curation process. However generally we expect most PIPs to go through the usual flow of the community curation process, and for direct committee submitted proposals to be rare.
 
+## Governance Flow Diagram
+
 ![Governance Flow Diagram](images/Polymesh Governance.png)
 
 ## Polymesh Improvement Proposals
