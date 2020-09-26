@@ -1,14 +1,14 @@
-# Ethereum POLY to Polymesh Bridge
+## Ethereum POLY to Polymesh Bridge
 
-## Overview
+### Overview
 
 Since the Polymath team committed to building a securities blockchain on Substrate, development has shifted focus away from Ethereum. To support existing and future Poly holders, the team has created the bridge. At the time of writing the bridge lets holders of Kovan POLY tokens carry those tokens over to our brand new Aldebaran testnet. When the Polymesh mainnet launches, it is going to be bridged with the Ethereum mainnet.
 
 Carrying the tokens over follows the standard *lock and mint* process. First, Ethereum tokens are locked indefinitely by the Ethereum smart contract. Then, native tokens are minted on the Polymesh side.
 
-## Bridge Architecture
+### Bridge Architecture
 
-### Software
+#### Software
 
 The bridge is a distributed system made up of the Ethereum smart contract, off-chain relay middleware and a dedicated Polymesh runtime module aka [*bridge pallet*](https://docs.polymesh.live/polymesh_runtime_common/bridge/index.html).
 

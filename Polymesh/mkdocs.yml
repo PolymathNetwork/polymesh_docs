@@ -1,68 +1,48 @@
 # Project information
-site_name: Polymesh
+site_name: Polymesh Developers Portal
 site_url: https://developer.polymesh.live
-site_description: >-
-  Documentation for Polymesh
+site_description: Documentation for Polymesh
 
 # Repository
 repo_name: PolymathNetwork/Polymesh
 repo_url: https://github.com/PolymathNetwork/polymesh
 edit_uri: ""
 
-nav:
-    - Polymesh Overview:
+nav: 
+    - Home: index.md
+    - Getting Started:
+      - Pillars: pillars.md
       - Architecture: architecture.md
-      - Timeline: timeline.md
-      - Technology: technology.md
-    - Alcyone Public Testnet: 
-      - Running A Node: node.md
-      - dApps: dapps.md
-    - POLYX:
-      - POLYX Overview: polyx_overview.md      
-      - Transaction Fees: transaction_fees.md
-      - Protocol Fees: protocol_fees.md
-      - POLY to POLYX Bridge: poly_bridge.md
-      - Treasury: treasury.md
-    - Identity:
-      - Key Management: key_management.md
-      - Permissions: permissions.md
-      - Multisig: multisig.md
-      - CDD Process: cdd.md
-      - Portfolios: portfolios.md
-    - Confidential Identity:
-      - Overview: ci_overview.md
-      - Entities and Identities: entities.md
-      - Identities and Assets: scope_labels.md
-    - Authorisations:
-      - Overview: auth_overview.md
-    - Assets:
-      - Overview: assets.md
-      - Issuance: issuance.md
-    - Compliance:
-      - Claims: claims.md
-      - Compliance Rules: rules.md
-    - Settlement:
-      - Venues, Instructions and Legs: settlement.md
-      - Settlement Engine: settlement_engine.md
-      - Security Token Offerings: stos.md
-    - Corporate Actions:
-      - Overview: ca_overview.md
-      - Capital Distributions: cap_distribution.md
-      - Corporate Ballots: ballots.md
-    - Governance:
-      - Overview: gov_overview.md
-      - Polymesh Improvement Proposals: pips.md
-      - Signalling: signalling.md
-      - Committees: committees.md
-      - Governance Council: gov_council.md
-    - Smart Extensions:
-      - Managing and Deploying Extensions: smart_extensions.md
-      - Count Transfer Manager: ctm.md
-      - Percentage Transfer Manager: ptm.md
-    - Consensus:
-      - Permissioned Operators: operators.md
-      - Staking: staking.md
-      - Rewards / Fines: tokenomics.md
+      - DeFi: defi.md
+      - Alcyone Public Testnet: testnet.md
+    - Polymesh Primitives:
+      - Identity: identity.md
+      - Customer Due Diligence: cdd.md
+      - Confidential Identity: confidential_identity.md
+      - Authorisations: authorisations.md
+      - Assets: assets.md
+      - Compliance: compliance.md
+      - Settlement: settlement.md
+      - Corporate Actions: corporate_actions.md
+      - Smart Extensions: smart_extensions.md
+    - Polymesh Network:
+      - POLYX Token: polyx.md
+      - POLY to POLYX Bridge: bridge.md
+      - Fees: fees.md
+      - Permissioned Roles: permissioned_roles.md
+      - Governance: governance.md
+      - Tokenomics: tokenomics.md
+      - Consensus: consensus.md
+    - Contribute:
+      - Grants: grants.md
+      - Bug Bounty: bug_bounty.md
+      - Alcyone Testnet: testnet.md
+    - Future Development:
+      - Confidential Assets: confidential_assets.md
+      - Smart Contracts: smart_contracts.md
+      - Asset Statistics: statistics.md
+    - External Resources: resources.md
+    - Glossary: glossary.md
 
 theme:
   name: material

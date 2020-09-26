@@ -1,5 +1,3 @@
-# Assets
-
 Assets on Polymesh can represent any type of digitalised asset, and are originated and managed through the asset base layer logic in Polymesh.
 
 This ensures that all assets are created in a standardised manner, allowing related functionality such as corporate actions, settlement and compliance, to function seamlessly across all assets.
@@ -60,3 +58,37 @@ The asset issuer also has some additional controls which are soley accessible to
   - permission venues to settle their asset
 
 In addition an asset issuer can execute a controller transfer of their token. This allows them to force transfer ownership of their asset tokens from any investor back to the primary issuance agent of the asset. The primary issuance agent is an identity which an asset issuer specifies for their asset, and is responsible for treasury management and token distribution. [TODO link]
+
+## Issuance
+
+The issuance process for assets in Polymesh allows the originator of an asset (the asset issuer) to issue and distribute their asset to investors.
+
+## Roles
+
+Every asset, identified by its unique ticker, is associated with two identities:  
+ - the asset issuers identity: this is the identity that created the asset
+ - the primary issuance agents identity: this is the identity responsible for distributing the asset to investors.
+ 
+These identities can be the same, and the primary issuance agent identity is in fact defaulted to the asset issuers identity.
+
+The asset issuer can set the primary issuance agent for their asset to any other identity, although the targetted identity must accept this role via a `AcceptPIA` authorisation. In the case where the primary issuance agent is the asset issuer, no authorisation is needed.
+
+## Process
+
+Once an asset issuer has created and configured their asset, they can then issue tokens representing ownership in the asset to the primary issuance agent.
+
+The primary issuance agent can then distribute those asset tokens to investors directly or via an security token offering, in both cases using the settlement engine.
+
+This approach allows a clean separation between the issuance process, which bypasses both the compliance and settlement engine and is restricted to only issuance to the configured primary issuance agent, and the distribution process which uses both the compliance and settlement engines.
+
+For more details on how the distribution process works seamlessly with the settlement engine, please see:  
+[TODO] link to distribution section of Settlement
+
+## Diagram
+
+1. register ticker (asset issuer)
+2. create asset (asset issuer)
+3. issue asset to PIA (asset issuer)
+4. distribute asset from PIA to investors (PIA)
+
+...
