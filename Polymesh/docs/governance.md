@@ -1,10 +1,15 @@
+## Overview
+
 Polymesh includes on-chain governance to manage network upgrades, changing parameters of the network (e.g. slashing percentages), permissioning network roles and distributing treasury funds.
 
 The governance system is designed to allow both community members and technical experts to collaborate on improving Polymesh and managing network changes.
 
 There are three main groups of actors in Polymesh governance:  
+
 - POLYX token holders  
-_ Committees (e.g. Technical Committee, Upgrade Committee)  
+
+- Committees (e.g. Technical Committee, Upgrade Committee)  
+
 - Governance Council  
 
 The governance process begins either via a community submitted proposal, which is then curated by other POLYX token holders, or a committee submitted proposal. In both cases the governance council is responsible for accessing the change and determining whether it should be ratified, rejected or temporarily skipped.
@@ -30,11 +35,16 @@ These PIP dispatchables can only be executed by the Governance Council and not a
 PIPs are also used to permission certain on-chain identities to have special priviledged roles. This includes adding and removing permissioned operators and CDD service providers.
 
 Some common examples include:  
-  - network upgrades (represented as a call to system::set_code TODO: add link) 
-  - treasury disbursement
-  - tokenomics parameter change
-  - adding new permissioned operators
-  - adding new permissioned CDD service providers
+
+- network upgrades (represented as a call to system::set_code TODO: add link) 
+
+- treasury disbursement
+
+- tokenomics parameter change
+
+- adding new permissioned operators
+
+- adding new permissioned CDD service providers
 
 ## Signalling
 
