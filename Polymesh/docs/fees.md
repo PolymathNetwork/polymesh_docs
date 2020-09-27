@@ -1,3 +1,13 @@
+## Overview
+
+Fees on Polymesh are paid in the networks native token, [POLYX](./polyx.md).
+
+There are three types of network fee:  
+
+- Transaction Fees - alway paid whether or not the transaction is successful
+- Protocol Fees - only paid for successful transactions
+- Smart Extension Fees - paid to use third party extensions 
+
 ## Transaction Fees
 
 Every on-chain transaction in Polymesh must be paid for using POLYX. The cost of the operation is proportional to the computational and storage complexity of the action being performed and is set directly by the network.
@@ -23,6 +33,16 @@ Currently only two types of transactions carry additional fees - these are:
 Protocol fees are also split between operators and the treasury, using the same 20 / 80 ratio. The operator portion of both transaction and protocol fees are paid to the operator that produces a block that includes the relevant transactions.
 
 Protocol fees are only paid by a user if their action is successful - for example if you try and register a ticker that has already been registered, you won't be charged the 2,500 POLYX protocol fee.
+
+## Smart Extension Fees
+
+Smart extensions are smart contracts which add certain types of functionality to Polymesh primitives. Initially Polymesh will support Transfer Restriction Smart Extensions, which can specify arbitrary additional transfer restriction logic for an asset.
+
+The author of a particular smart extension template can choose to charge other users to use their template. There can also be a per-use fee for the smart extension.
+
+These fees are set by the third party developers of these extensions, and per-use fees are fixed once the template has been deployed for a particular asset.
+
+Smart Extension fees are split between the template author, the network treasury and operators.
 
 ## Network Treasury
 

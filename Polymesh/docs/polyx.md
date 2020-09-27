@@ -1,7 +1,11 @@
-POLYX is the utility token of the Polymesh network. It is used in Polymesh for staking, for both operators and non-operators, signalling on governance issues and paying for transactions on the network.
+POLYX is the native token of the Polymesh network.
 
-Polymath has an ERC20 token on the Ethereum mainnet, used for our Ethereum ST20 protocol. POLY ERC20 tokens can be swapped one-to-one for POLYX tokens on Polymesh via the bridge process (TODO: link).
+It is used in Polymesh for staking, for both operators and non-operators, signalling on governance issues and paying for transactions on the network.
 
-Additional POLYX is only created when block rewards are minted to be paid to operators and stakers.
+Polymath has an ERC20 token on the Ethereum mainnet, POLY, used for our Ethereum ST20 protocol. POLY ERC20 tokens can be swapped one-to-one for POLYX tokens on Polymesh via the [bridge process](./bridge.md).
 
-POLYX is held at the key level (TODO: link) and can be transferred between any keys which are associated with an identity that has a valid CustomerDueDiligence claim (TODO: link).
+Additional POLYX is only created when block rewards are minted in order to reward operators and stakers.
+
+Any Polymesh key can hold POLYX, but it can only be sent and received by a key which is associated with an identity that has a valid Customer Due Diligence claim.
+
+POLYX can be [staked](./tokenomics.md) in order to receive a proportional amount of the block reward assigned to stakers. Operators are also required to stake a minimum bond in order to run an authoring node.
