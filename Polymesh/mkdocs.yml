@@ -1,6 +1,6 @@
 # Project information
 site_name: Polymesh Developers Portal
-site_url: https://developer.polymesh.live
+site_url: https://developers.polymesh.live
 site_description: Documentation for Polymesh
 
 # Repository
@@ -8,7 +8,7 @@ repo_name: PolymathNetwork/Polymesh
 repo_url: https://github.com/PolymathNetwork/polymesh
 edit_uri: ""
 
-nav: 
+nav:
     - Getting Started:
       - Home: index.md
       - Polymesh: architecture.md
