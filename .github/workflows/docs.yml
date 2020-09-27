@@ -22,6 +22,7 @@ jobs:
       run: pip install mkdocs mkdocs-material
     - name: Build static docs
       run: mkdocs build
+      working-directory: ./Polymesh
     - name: Publish docs to Cloudflare workers
       uses: cloudflare/wrangler-action@1.3.0
       with:
