@@ -9,12 +9,19 @@ repo_url: https://github.com/PolymathNetwork/polymesh
 edit_uri: ""
 
 nav: 
-    - Home: index.md
     - Getting Started:
-      - Architecture: architecture.md
-      - DeFi: defi.md
+      - Home: index.md
+      - Polymesh: architecture.md
       - Alcyone Public Testnet: testnet.md
-    - Polymesh Primitives:
+    - Network:
+      - POLYX Token: polyx.md
+      - POLY to POLYX Bridge: bridge.md
+      - Fees: fees.md
+      - Permissioned Roles: permissioned_roles.md
+      - Governance: governance.md
+      - Tokenomics: tokenomics.md
+      - Consensus: consensus.md
+    - Primitives:
       - Identity: identity.md
       - Customer Due Diligence: cdd.md
       - Confidential Identity: confidential_identity.md
@@ -25,14 +32,6 @@ nav:
       - Settlement: settlement.md
       - Corporate Actions: corporate_actions.md
       - Smart Extensions: smart_extensions.md
-    - Polymesh Network:
-      - POLYX Token: polyx.md
-      - POLY to POLYX Bridge: bridge.md
-      - Fees: fees.md
-      - Permissioned Roles: permissioned_roles.md
-      - Governance: governance.md
-      - Tokenomics: tokenomics.md
-      - Consensus: consensus.md
     - Contribute:
       - Grants: grants.md
       - Bug Bounty: bug_bounty.md
