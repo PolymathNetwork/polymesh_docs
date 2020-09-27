@@ -13,11 +13,12 @@ jobs:
     steps:
     - name: Checkout current code
       uses: actions/checkout@v2
-    - name: Install dependencies
+    - name: Install Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
         architecture: 'x64'
+    - name: Install mkdocs and our mkdocs theme
       run: pip install mkdocs mkdocs-material
     - name: Build static docs
       run: mkdocs build
