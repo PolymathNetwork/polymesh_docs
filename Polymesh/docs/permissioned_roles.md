@@ -4,7 +4,7 @@ Polymesh is a public network, so anyone can run a node, receive network and stat
 
 Different roles on the Polymesh network have different levels of permissioning required, all managed through the on-chain [governance](./governance.md) process.
 
-## Customer Due Diligence
+## Network Users
 
 All users of Polymesh go through a [Customer Due Diligence](cdd.md) process. With a valid CDD claim, a user can send and receive POLYX and interact with the Polymesh primitives to create and manage their identities and assets, settle instructions and so on.
 

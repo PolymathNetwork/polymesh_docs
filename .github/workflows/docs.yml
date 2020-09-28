@@ -19,7 +19,7 @@ jobs:
         python-version: '3.x'
         architecture: 'x64'
     - name: Install mkdocs and our mkdocs theme
-      run: pip install mkdocs mkdocs-material
+      run: pip install mkdocs==1.1.2 mkdocs-material==5.4.0
     - name: Build static docs
       run: mkdocs build
       working-directory: ./Polymesh
