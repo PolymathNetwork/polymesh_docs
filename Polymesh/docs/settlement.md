@@ -1,3 +1,7 @@
+## Overview
+
+[TODO - Add details]
+
 ## Roles
 
 ### Asset Issuer
@@ -24,7 +28,17 @@ Once an instruction is authorised by a counterparty, their assets are locked, an
 
 A counterparty can cancel a pending instruction. If any counterparty cancels, the entire instruction should be marked as cancelled (and everyones assets unlocked).
 
-## Peer to Peer Transfer
+## Legs, Instructions and Venues
+
+[TODO - Add details]
+
+## Affirming and Custody
+
+[TODO - Add details]
+
+## Examples
+
+### Peer to Peer Transfer
 
 Alice wants to transfer 10 ACME tokens to Bob as a gift.
 
@@ -36,7 +50,7 @@ Once the instruction has been fully authorised (which can happen upon creation i
 
 ![Peer to peer](images/P2P.png)
 
-## Exchange Mediated Transfer
+### Exchange Mediated Transfer
 
 ExchangeCo matches Alice, a seller of ACME, with Bob, a buyer of ACME, and coordinates an agreed price to exchange assets - 100 ACME for 10 USDC.
 
@@ -50,7 +64,7 @@ The instruction is executed with Alice receiving 10 USDC and Bob receiving 100 A
 
 ![Asset vs. Asset](images/TvT.png)
 
-## Exchange Mediated Transfer with Authorisation
+### Exchange Mediated Transfer with Authorisation
 
 ExchangeCo matches Alice, a seller of ACME, with Bob, a buyer of ACME, and coordinates an agreed price to exchange assets - 100 ACME for 10 USDC.
 
@@ -62,7 +76,7 @@ ExchangeCo creates a venue, with a single instruction with two legs, providing t
 
 The instruction is authorised upon creation, and immediately settles, transferring 100 ACME from Alice to Bob and marking Bob’s receipt as used.
 
-## Netting Process
+### Netting Process
 
 ClearCo, with a pre-agreed netting contract with BankCo’s, collects trade data from BankCo_1, BankCo_2, BankCo_3 and BankCo_4 and calculates an optimal netting strategy.
 
@@ -72,7 +86,7 @@ Each BankCo individually authorises the instruction - when all BankCo’s have a
 
 ![Netting](images/Netting.png)
 
-## Security Token Offering
+### Security Token Offering
 
 AcmeCo wishes to distribute 1000 ACME tokens to investors.
 
