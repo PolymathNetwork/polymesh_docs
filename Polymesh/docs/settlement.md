@@ -30,7 +30,27 @@ A counterparty can cancel a pending instruction. If any counterparty cancels, th
 
 ## Legs, Instructions and Venues
 
-[TODO - Add details]
+Instructions and Legs are always concrete - specify all details at the point of creation and are immutable.
+
+For an instruction to be executed, all counterparties of the instruction must signal their authorisation and lock any necessary asset / provide appropriate receipts.
+
+Only the creator of a venue can add instructions underneath it.
+
+Authorisation can only be provided before the instructions expiry data, and after its valid_from date.
+
+Asset issuers can restrict who can post an instruction that references their asset, or leave it unrestricted.
+
+Once all counterparties have authorised an instruction, it is automatically executed. At that point, if the execution fails (e.g. due to compliance on the assets) then instruction is marked as failed, if it succeeds it is stamped with the time of the successful execution.
+
+Any counterparty to an instruction can reject it, marking it as rejected immediately, or simply wait until it expires.
+
+A counterpartys' authorisation is only valid if they either lock the relevant amount of assets to the instruction to cover any of their obligations across all legs, or provide a signed receipt that the transaction has occurred off-chain.
+
+Receipts which are used to authorise an instruction are marked as locked globally.
+
+If an instruction fails, is rejected or expires, all asset locks are removed (and receipts marked as unused).
+
+If an instruction is executed, assets are transferred between counterparties, and receipts are marked as used.
 
 ## Affirming and Custody
 

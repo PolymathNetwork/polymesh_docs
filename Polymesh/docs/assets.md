@@ -33,7 +33,7 @@ Registering a ticker ensures no other user can issue an asset with that ticker w
 
 Having registered a ticker, users can then create their asset, specifying the type of the asset (e.g. Equity, Bond, Fund).
 
-The asset is initially created with a zero total supply. For the initial issuance of the asset, see the Issuance section [TODO link].
+The asset is initially created with a zero total supply. For the initial issuance of the asset, see the Issuance section.
 
 As well as being identified via a unique ticker, assets can be associated with additional external identifiers, such as ISINs, CUSIPs, CINs, LEIs and DTIs, with Polymesh validating that these identifiers are consistent (i.e. that their checksums match).
 
@@ -41,7 +41,7 @@ If a ticker is not currently reserved, the ticker registration is done automatic
 
 ## Documentation
 
-Polymesh allows the issuer of an asset to associate documents with that asset. These documents can include [TODO] XXX.
+Polymesh allows the issuer of an asset to associate documents with that asset.
 
 The actual document is not stored on-chain, and instead the asset is associated with a document reference on-chain, where the reference includes a name, the URL at which the document can be found (this may be a permissioned URL requiring an investor in the asset to have some credentials to access the document) as well as an optional hash of the document contents.
 
@@ -49,7 +49,7 @@ Documentation can only be updated or modified by the identity that issued the co
 
 ## Ownership
 
-All asset ownership in Polymesh is at the identity granularity. Whilst an investor can organise their assets into different portfolios under their identity [TODO link], compliance is enforced at the identity level, so in order to pay or receive a particular assets token, the relevant identity must have claims that match the compliance rules specified by the asset issuer for the asset. [TODO link]
+All asset ownership in Polymesh is at the identity granularity. Whilst an investor can organise their assets into different portfolios under their [identity](./identity.md), compliance is enforced at the identity level, so in order to pay or receive a particular assets token, the relevant identity must have claims that match the [compliance](./compliance.cd) rules specified by the asset issuer for the asset.
 
 ## Asset Issuers
 
@@ -65,7 +65,7 @@ The asset issuer also has some additional controls which are soley accessible to
 
 - permission venues to settle their asset
 
-In addition an asset issuer can execute a controller transfer of their token. This allows them to force transfer ownership of their asset tokens from any investor back to the primary issuance agent of the asset. The primary issuance agent is an identity which an asset issuer specifies for their asset, and is responsible for treasury management and token distribution. [TODO link]
+In addition an asset issuer can execute a controller transfer of their token. This allows them to force transfer ownership of their asset tokens from any investor back to the primary issuance agent of the asset. The primary issuance agent is an identity which an asset issuer specifies for their asset, and is responsible for treasury management and token distribution.
 
 ## Issuance
 
@@ -90,15 +90,3 @@ Once an asset issuer has created and configured their asset, they can then issue
 The primary issuance agent can then distribute those asset tokens to investors directly or via an security token offering, in both cases using the settlement engine.
 
 This approach allows a clean separation between the issuance process, which bypasses both the compliance and settlement engine and is restricted to only issuance to the configured primary issuance agent, and the distribution process which uses both the compliance and settlement engines.
-
-For more details on how the distribution process works seamlessly with the settlement engine, please see:  
-[TODO] link to distribution section of Settlement
-
-### Diagram
-
-1. register ticker (asset issuer)
-2. create asset (asset issuer)
-3. issue asset to PIA (asset issuer)
-4. distribute asset from PIA to investors (PIA)
-
-...

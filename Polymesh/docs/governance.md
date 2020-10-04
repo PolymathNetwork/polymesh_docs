@@ -36,7 +36,7 @@ PIPs are also used to permission certain on-chain identities to have special pri
 
 Some common examples include:  
 
-- network upgrades (represented as a call to system::set_code TODO: add link) 
+- network upgrades
 
 - treasury disbursement
 
@@ -54,7 +54,7 @@ Any POLYX token holder, in addition to being able to submit a PIP for considerat
 
 When the Governance Council triggers a PIP snapshot, we take these signals and use them to order the community submitted PIPs for consideration by the Governance Council.
 
-Currently we take a linear count of positive and negative signals and use these to order PIPs, but in the future we can consider more expressive mechanisms, such as quadratic voting by leveraging our confidential identity model (TODO: Link).
+Currently we take a linear count of positive and negative signals and use these to order PIPs, but in the future we can consider more expressive mechanisms, such as quadratic voting by leveraging our [confidential identity](./confidential_identity.md) model.
 
 Token holders can unbond their POLYX and remove their support (or lack of support) from a PIP at any time. Bonding POLYX to signal on different PIPs does not prevent token holders from staking their POLYX.
 
@@ -86,7 +86,7 @@ The Governance Concil can be thought of as a multisig controlled by its members,
 
 These non-PIP actions include managing the membership of the Governance Council itself, with existing members needing to agree and vote on the addition or removal of members, as well as changes to the voting structure, for example the voting threshold.
 
-The Goverance Council is also able to issue a Customer Due Diligence claim (TODO: add link) should the need arise.
+The Goverance Council is also able to issue a [Customer Due Diligence](./cdd.md) claim should the need arise.
 
 ## Release Coordinator
 
