@@ -11,7 +11,7 @@ edit_uri: ""
 nav:
     - Getting Started:
       - Home: index.md
-      - Polymesh: architecture.md
+      - Architecture: architecture.md
       - Alcyone Public Testnet: testnet.md
     - Network:
       - POLYX Token: polyx.md
