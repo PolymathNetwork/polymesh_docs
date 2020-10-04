@@ -132,3 +132,5 @@ The *portfolios* granularity allows a key to be limited to interacting with only
 The *assets* granularity allows a key to be limited to interacting with only specific assets held in any portfolio under the identity.
 
 The access of a particular key is the intersection of each of these categories. It is possible to permission a key with full access to any of these categories.
+
+Not all on-chain actions are associated with either an asset, or a portfolio (for example staking). For such actions, these permission types are not checked.
