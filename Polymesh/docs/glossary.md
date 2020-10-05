@@ -1,8 +1,12 @@
+## Claim / Attestation
+
+These terms are used interchangably. The Polymesh core code refers to claims, whilst the SDK and UIs refer to attestations. In both cases they represent an attestation from one identity about another identity. These attestations or claims are attached to an identity and allow asset issuers to manage compliance on their assets.
+
 ## Transaction
 
 A transaction, also called extrinsic, is a user initiated on-chain action. All transactions carry a POLYX network fee and possible other costs. Transactions can fail if there are insufficient funds to pay for it, is not associated with a CDD'ed identity, or if it is deemed invalid by the networks logic.
 
-## CustomerDueDiligence (CDD)
+## Customer Due Diligence (CDD)
 
 Each Polymesh user have a CustomerDueDiligence claim associated with one of their identities to transact on the network. This claim is provided by a set of permissioned CDD service providers and is a light weight due diligence process designed to ensure all network participants can safely transaction with each other.
 
