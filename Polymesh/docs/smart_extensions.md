@@ -57,7 +57,7 @@ A transfer restriction smart extension must have a `verify_transfer` function. T
         ) -> RestrictionResult
 ```
 
-## Smart Extension 
+## Smart Extension Fees
 
 The author of a smart extension template can set a fee in POLYX that a user is required to pay to create an instance of that template for their own usage. This fee is split between the smart extension author, the network treasury, and network operators.
 
