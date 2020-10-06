@@ -41,3 +41,5 @@ record exists due to the absence of transactions, the current asset balance of t
 
 The time at which a checkpoint was made is stored in a map indexed by checkpoint sequence numbers
 and can be read knowing the required sequence number.
+
+[unix_time]: https://en.wikipedia.org/wiki/Unix_time
