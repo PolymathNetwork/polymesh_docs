@@ -16,7 +16,7 @@ There are two ways to create a checkpoint.
 
 2. Create a checkpoint schedule using the dispatchable `create_checkpoint_schedule` in the same
    pallet providing the ticker and a schedule as arguments. The schedule consists of a starting
-   timestamp in seconds Unix time and a period for recurring the checkpoint ar regular
+   timestamp in [seconds since the UNIX epoch][unix_time] and a period for recurring the checkpoint at regular
    intervals. The period is a multiple of one of seconds, minutes, hours, days, weeks, months or
    years. If the period has zero length then the checkpoint schedule it defines is non-recurring and
    the only checkpoint it contains is the one at the start. Scheduled checkpoints are created
