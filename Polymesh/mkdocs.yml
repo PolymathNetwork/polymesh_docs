@@ -26,7 +26,7 @@ nav:
       - Customer Due Diligence: cdd.md
       - Confidential Identity: confidential_identity.md
       - Authorisations: authorisations.md
-      - Assets: assets.md
+      - Assets: assets.md        
       - Portfolios and Custody: portfolios_custody.md
       - Compliance: compliance.md
       - Settlement: settlement.md
