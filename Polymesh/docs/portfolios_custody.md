@@ -22,7 +22,7 @@ Portfolios are not related to compliance - i.e. claims remain at the identity le
 
 Transfers of assets between portfolios of the same identity should always be possible (provided the identity has a CDD check) and not subject to any compliance rules.
 
-Signing keys are managed at the identity level, but can be granted access to specific portfolios under an identity.
+Secondary keys are managed at the identity level, but can be granted access to specific portfolios under an identity.
 
 The distribution of assets into portfolios, and the association of a portfolio with an identity are publicly stored on-chain.
 
@@ -32,10 +32,10 @@ Every identity has a default identity which is used in the case that a specific 
 
 A user can assign custodianship of a portfolio to another identity. The cleanly separates beneficial ownership of an asset (which always stays under the beneficiares identity) used for corporate actions, from custodial ownership where another entity may manage those assets on behalf of their beneficiary.
 
+Any assets in a portfolio which has been assigned a custodian are managed exclusively by that custodian, and include any new assets which are transferred into the portfolio.
+
 A portfolio can only be assigned to a single custodian at a time. Once assigned to a custodian, the custodian can:  
 
-- affirm instructions that relate to the portfolio on behalf of the owner
-
-- move assets out of the portfolio on behalf of the owner
+- affirm or reject instructions that relate to portfolios managed by the custodian on behalf of the owner
 
 - revoke their custodianship over the portfolio
