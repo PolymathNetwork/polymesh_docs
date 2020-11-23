@@ -12,7 +12,7 @@ Ownership of an asset on Polymesh can be determined via its:
 
 - investor balances: the individual balance of each investing identity in the asset
 
-The asset pallet documentation can be found at:  
+The asset pallet documentation can be found at:
 <https://docs.polymesh.live/pallet_asset/index.html>
 
 Polymesh allows you to manage the full lifecycle of any asset directly on the Polymesh blockchain, including the issuance, initial distribution or fundraise of the asset and any subsequent corporate actions such as dividend payments, capital distributions or corporate ballots.
@@ -43,7 +43,7 @@ If a ticker is not currently reserved, the ticker registration is done automatic
 
 Polymesh allows the issuer of an asset to associate documents with that asset.
 
-The actual document is not stored on-chain, and instead the asset is associated with a document reference on-chain, where the reference includes a name, the URL at which the document can be found (this may be a permissioned URL requiring an investor in the asset to have some credentials to access the document) as well as an optional hash of the document contents.
+The actual document is not stored on-chain, and instead the asset is associated with a document reference on-chain, where the reference includes a name, the URL at which the document can be found (this may be a permissioned URL requiring an investor in the asset to have some credentials to access the document), as well as an optional document type, filing date, and hash of the document contents.
 
 Documentation can only be updated or modified by the identity that issued the corresponding asset (the asset issuer).
 
@@ -73,12 +73,12 @@ The issuance process for assets in Polymesh allows the originator of an asset (t
 
 ### Roles
 
-Every asset, identified by its unique ticker, is associated with two identities:  
+Every asset, identified by its unique ticker, is associated with two identities:
 
 - the asset issuers identity: this is the identity that created the asset
 
 - the primary issuance agents identity: this is the identity responsible for distributing the asset to investors.
- 
+
 These identities can be the same, and the primary issuance agent identity is in fact defaulted to the asset issuers identity.
 
 The asset issuer can set the primary issuance agent for their asset to any other identity, although the targetted identity must accept this role via a `AcceptPIA` authorisation. In the case where the primary issuance agent is the asset issuer, no authorisation is needed.
