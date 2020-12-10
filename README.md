@@ -12,4 +12,4 @@ https://www.mkdocs.org/
 This documentation is a work in-progress.
 
 For more details on Alcyone, the Polymesh Public Testnet, see:  
-http://polymath.network/
+https://polymath.network/
