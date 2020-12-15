@@ -14,11 +14,15 @@ Any Polymesh user, with a valid CDD claim, can deploy a smart extension template
 
 A smart extension template is a copy of the smart extensions logic held on-chain, from which specific instances of the smart extension can be created, and attached to a Polymesh primitive (for example an asset, in the case of a transfer restriction).
 
+Various metadata about the smart extension is captured when it is deployed, including an instantion fee set by the creator of the template, which will be paid by users of the template (i.e. asset issuers that attach it to their asset for compliance purposes). A usage fee is also captured, although this is not currently used in-protocol. It may be used in the future with new types of smart extension.
+
 ## Transfer Restriction Smart Extensions
 
 To use a transfer restriction smart extension it must first be deployed to the Polymesh blockchain as a template, with some additional metadata:  
 
 ```
+/// Subset of the SE template metadata that is provided by the template owner.
+#[derive(Encode, Decode, Default, Debug, Clone, PartialEq)]
 pub struct TemplateMetadata<Balance> {
     /// Url that can contain the details about the template
     /// Ex- license, audit report.
@@ -31,6 +35,17 @@ pub struct TemplateMetadata<Balance> {
     pub description: MetaDescription,
     /// Version of the template.
     pub version: MetaVersion,
+}
+
+/// Data structure that hold all the relevant metadata of the smart extension template.
+#[derive(Encode, Decode, Default, Debug, Clone, PartialEq)]
+pub struct TemplateDetails<Balance> {
+    /// Fee paid at the time on creating new instance form the template.
+    pub instantiation_fee: Balance,
+    /// Owner of the SE template.
+    pub owner: IdentityId,
+    /// power button to switch on/off the instantiation from the template
+    pub frozen: bool,
 }
 ```
 
@@ -61,4 +76,8 @@ A transfer restriction smart extension must have a `verify_transfer` function. T
 
 The author of a smart extension template can set a fee in POLYX that a user is required to pay to create an instance of that template for their own usage. This fee is split between the smart extension author, the network treasury, and network operators.
 
-The author can also set a "per-use" fee for their smart extension, which a user must pay each time the smart extension is used. This fee is fixed at the point where a user decided to create their own instance of it.
+Whilst we capture a usage fee, this is not currently paid in-protocol as it isn't appropriate for transfer management smart extensions.
+
+There is a protocol fee paid every time a smart contract template is deployed. The value of this fee is managed via on-chain governance.
+
+In addition, the usual POLYX transaction fees apply.
