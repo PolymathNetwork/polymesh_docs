@@ -22,10 +22,10 @@ CDD service providers are added and removed via a PIP executed through the on-ch
 
 ## Committee Membership
 
-Committees are able to send PIPs directly to the Governance Council for ratification. There may be several committees, each with a different specialisation and membership.
+Committees are able to send PIPs directly to the Governing Council for ratification. There may be several committees, each with a different specialisation and membership.
 
 A committee manages their own membership, voting to add or remove new members.
 
-## Governance Council Membership
+## Governing Council Membership
 
-The Governance Coucil ratify and reject PIPs and schedule their execution. Like committees, the governance council manage their own membership via their usual voting process.
+The Governance Coucil ratify and reject PIPs and schedule their execution. Like committees, the governing council manage their own membership via their usual voting process.
