@@ -10,7 +10,7 @@ Additional POLYX is only created when block rewards are minted in order to rewar
 
 Any Polymesh key can hold POLYX, but it can only be sent and received by a key which is associated with an identity that has a valid Customer Due Diligence claim.
 
-POLYX can be [staked](./tokenomics.md) in order to receive a proportional amount of the block reward assigned to stakers. Operators are also required to stake a minimum bond in order to run an authoring node.
+POLYX can be [staked](./tokenomics.md) in order to receive a proportional amount of the block reward assigned to stakers. Operators may also required to stake a minimum bond in order to run an authoring node.
 
 ## Security
 

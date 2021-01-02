@@ -23,3 +23,9 @@ Tha Alcyone network is being continually upgraded as mainnet features are comple
 
 Once onboarded, the Polymesh Token Studio can be used to easily issue, manage and configure assets on Alcyone:  
 <https://tokenstudio.polymesh.live/>
+
+The dashboard provides a central place to manage your identity:  
+<https://dashboard.polymesh.live/>
+
+Polymesh has a dedicated browser extension wallet, available from the Chrome store at:  
+<https://chrome.google.com/webstore/detail/polymesh-wallet/jojhfeoedkpkglbfimdfabpdfjaoolaf?hl=en>

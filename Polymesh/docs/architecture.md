@@ -12,8 +12,6 @@ Polymesh is built on the Substrate framework, an open-source project that provid
 
 ## Architecture
 
-[TODO - Add new diagram, description of layers]
-
 ![Architecture Diagram](images/Polymesh Architecture.png)
 
 ## Polymesh Pillars
@@ -32,7 +30,7 @@ An entity (a real world individual or organisation) can have multiple on-chain i
 
 ### Governance
 
-Governance allows the chain to grow and develop. Polymesh has a sophisticated governance mechanism that combines signals from the broader community with technical experts (committees) and a governance council for actioning proposals. Polymesh Improvement Proposals (PIPs) can be proposed by any network user, and possible PIPs include network upgrades, setting the parameters of the network related to consensus and security and many other actions.
+Governance allows the chain to grow and develop. Polymesh has a sophisticated governance mechanism that combines signals from the broader community with technical experts (committees) and a governing council for actioning proposals. Polymesh Improvement Proposals (PIPs) can be proposed by any network user, and possible PIPs include network upgrades, setting the parameters of the network related to consensus and security and many other actions.
 
 The Polymesh governance system is designed to further decentalise over time.
 

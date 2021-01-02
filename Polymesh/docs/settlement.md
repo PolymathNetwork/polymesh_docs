@@ -1,6 +1,8 @@
 ## Overview
 
-[TODO - Add details]
+Settlement in Polymesh is the process by which assets are transferred between identities in a regulated and compliant fashion.
+
+It requires all counterparties of a transaction to affirm (agree) an instruction (a set of asset transfers) before the instruction settles (completes).
 
 ## Roles
 
@@ -54,7 +56,9 @@ If an instruction is executed, assets are transferred between counterparties, an
 
 ## Affirming and Custody
 
-[TODO - Add details]
+If a custodian has been granted access to a users portfolio, the custodian is able to affirm any instructions that reference that portfolio on behalf of their client.
+
+This allows control to be handed to a custodian, whilst the record of beneficial ownership remains with the owner of the assets.
 
 ## Examples
 
