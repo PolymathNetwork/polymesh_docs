@@ -13,3 +13,5 @@ This documentation is a work in-progress.
 
 For more details on Alcyone, the Polymesh Public Testnet, see:  
 https://polymath.network/
+
+Please make updates via PRs
