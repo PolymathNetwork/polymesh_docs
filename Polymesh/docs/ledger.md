@@ -69,7 +69,7 @@ You can now use this account to interact with Polymesh on Polymesh App and it wi
 
 On the "Accounts" tab, find your Ledger-connected account. Click on the three vertical dots at the end of the row. This will open a new menu, here you can click the "Show address on hardware device" option to display the address on your device.
 
-![Options menu of an account in the Accounts screen of Polymesh](assets/ledger/ledger-4.png)
+![Options menu of an account in the Accounts screen of Polymesh](images/ledger/ledger-4.png)
 
 Here you can scroll through and make sure the address matches to what is displayed on the Polymesh App.
 
