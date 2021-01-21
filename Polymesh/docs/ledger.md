@@ -81,8 +81,6 @@ If you select your Ledger account when submitting an extrinsic, you will be prom
 
 ## Support
 
-[ledger]: https://www.ledger.com/
-[polymath]: https://polymath.network/
-[polymath app]: https://app.polymesh.live/
-[prerelease instructions]: https://github.com/Zondax/ledger-polymesh#download-and-install
-[releases page]: https://github.com/Zondax/ledger-polymesh/releases
+For support, please contact [Polymath](https://polymath.network/).
+
+For code, please see [Releases Page](https://github.com/Zondax/ledger-polymesh/releases).
