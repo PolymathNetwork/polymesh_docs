@@ -5,7 +5,7 @@ NB - the Ledger App is currently being reviewed and is not yet available in the 
 > Note: Because of required WebUSB support, Ledger wallets currently only work on Chromium-based
 > browsers like Brave and Chrome.
 
-The Polymesh [Ledger][] application is compatible with both the Ledger Nano S and the Ledger Nano X devices. Ledger devices are hardware wallets that keep your secret secured on a physical device that does not expose it to your computer or the internet.
+The Polymesh Ledger application is compatible with both the Ledger Nano S and the Ledger Nano X devices. Ledger devices are hardware wallets that keep your secret secured on a physical device that does not expose it to your computer or the internet.
 
 The Polymesh Ledger application allows you to manage Polymesh's native token, POLYX and interact with the Polymesh blockchain. The application supports most of the transaction types of the network, although the initial version does not support batched transactions (see the utility pallet).
 
@@ -39,7 +39,7 @@ The functionality is currently gated behind a feature setting that you will need
 
 In order to turn on the interoperability with the Polymesh Ledger application, go to the "Settings" tab in the Polymesh App. Find the option for attaching Ledger devices and switch the option from the default "Do not attach Ledger devices" to "Attach Ledger via WebUSB".
 
-![Dropdown selector for allowing Ledger connections in Polymesh Settings](assets/ledger/ledger.png)
+![Dropdown selector for allowing Ledger connections in Polymesh Settings](images/ledger/select-ledger.png)
 
 Click *"Save"* to keep your settings.
 
