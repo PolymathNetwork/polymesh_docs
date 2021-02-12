@@ -52,6 +52,8 @@ a dispatchable function that creates a CA.
 When creating the CA, the associated asset's ticker, free-form text,
 and the CA kind, e.g., a notice or a benefit need to be provided.
 
+A declaration date should also be provided when initiating a corporate action. This is the date that the corporate action was declared, and should be earlier than both the record date, and the time when the corporate action is initiated on-chain.
+
 Additionally, a record date, withholding taxes,
 and the targets of the CA can be specified.
 For more on those, read on.
